@@ -1,18 +1,18 @@
 package com.MoodAnalyser;
 
 public class ModeAnalyser {
-    String message;
+    //Instance variable to take message
+     String message;
+    //Constructor
+    public ModeAnalyser(String message) {
+        this.message = message;
+    }
     //Method to Analyse User Mood
-    public String analyseMood(String message) {
-        try{
-            if (message.contains("SAD"))
-                return "SAD";
-            else
-                return "HAPPY";
-        }
-        //Handling Null Point Exception
-        catch(NullPointerException e) {
+    public String analyseMood() {
+        //Conditions to Check the message
+        if (this.message.contains("SAD"))
+            return "SAD";
+        else
             return "HAPPY";
-        }
     }
 }
