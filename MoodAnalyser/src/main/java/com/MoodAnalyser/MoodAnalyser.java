@@ -12,7 +12,7 @@ public class MoodAnalyser {
             else
                 return "HAPPY";
         }
-        //Handling Null Point Exception
+        //Handling Null and Empty Input Exception
         catch(NullPointerException e) {
             throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.ENTERED_NULL,"Please Enter a Proper Message");       }
     }
